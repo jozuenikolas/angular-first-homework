@@ -15,7 +15,12 @@ export class ChronometerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    if(this.minutes>60){
+      this.minutes = 40
+    }
+    if(this.seconds>60){
+      this.seconds=20
+    }
   }
 
   startCounter(){
