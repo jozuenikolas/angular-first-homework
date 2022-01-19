@@ -1,0 +1,19 @@
+<h2 *ngIf="minutes <= 9 && seconds <= 9"> 0{{ minutes }}:0{{ seconds }}</h2>
+<h2 *ngIf="minutes <= 9 && seconds > 9"> 0{{ minutes }}:{{ seconds }}</h2>
+<h2 *ngIf="minutes > 9 && seconds <= 9"> {{ minutes }}:0{{ seconds }}</h2>
+<h2 *ngIf="minutes > 9 && seconds > 9"> {{ minutes }}:{{ seconds }}</h2>
+
+<a (click)="startCounter()">
+  <i class="fas fa-play fa-play-color me-3"></i>
+</a>
+<a (click)="pauseCounter()">
+  <i class="fas fa-pause fa-pause-color me-3"></i>
+</a>
+<a (click)="stopCounter()">
+  <i class="fas fa-stop fa-stop-color me-3"></i>
+</a>
+<a (click)="logCounter()">
+  <i class="fas fa-clock fa-clock-color"></i>
+</a>
+
+

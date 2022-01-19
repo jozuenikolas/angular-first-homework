@@ -1,14 +1,44 @@
-<span class="span-title">{{ title }} está ejecutándose y será una gran aplicación!</span>
+<p class="title">Chronometer Component</p>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4 offset-md-4 mb-3">
+      <app-chronometer [minutes]="30" [seconds]="10"
+                       (evtClick)="insertLogCounter($event)"></app-chronometer>
+    </div>
+  </div>
+  <div class="row text-center mb-3">
+    <div class="col-md-4 offset-md-4">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let log of logCounter">
+          {{ log }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<br/><br/>
 
-<span class="span-greeting">Saludo: {{ greeting }}</span>
-
-<br/><br/>
-
-<i class="fa fa-address-book"></i>
+<p class="title">Bootstrap</p>
 <div class="container">
   <p class="lead">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae interdum dui, tempus porttitor sem.
   </p>
 </div>
+
+
+<p class="title">Font Awesome</p>
+<i class="fa fa-address-book mt-2 mb-3 ms-2"></i>
+
+
+<p class="title">Deber 1</p>
+<span class="span-title">{{ title }} está ejecutándose y será una gran aplicación!</span>
+<br/><br/>
+<span class="span-greeting">Saludo: {{ greeting }}</span>
+<br/><br/>
+
+
+
+
+
+
+
