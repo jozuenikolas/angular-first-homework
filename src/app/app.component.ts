@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
+import {ChronometerComponent} from "./shared/components/chronometer/chronometer.component";
 
 @Component({
   selector: 'app-root',
@@ -11,11 +12,18 @@ export class AppComponent {
   logCounter:string[] = [];
 
   insertLogCounter(log:string){
-    this.logCounter.push(log)
+    this.logCounter.unshift(log)
   }
 
-  cleanLogCounter(log:string){
-    this.logCounter = []
+  mostrarConsola(value:string){
+    console.log(value)
+  }
+
+  @ViewChild('chronometerFirst') ctrFirst:ChronometerComponent
+  @ViewChild('chronometerSecond') ctrSecond:ChronometerComponent
+  iniciarCrono(){
+    this.ctrFirst.startCounter()
+    this.ctrSecond.startCounter()
   }
 
 }

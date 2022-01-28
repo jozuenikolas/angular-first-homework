@@ -1,0 +1,22 @@
+<p>main-page works!</p>
+
+
+<app-chronometer #chronometerFirst [minutes]="30" [seconds]="61"></app-chronometer>
+
+<!--<app-card title="Card title"
+          subtitle="Card subtitle"
+          content="Some quick example text to build on the card title and make up the bulk of the card's content.">
+</app-card>-->
+
+<app-card title="Dashboard" cardClass="text-white bg-primary">
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <button class="btn btn-primary" type="button" (click)="onClickCard()">
+      Go somewhere
+    </button>
+  </div>
+
+
+  <app-chronometer #chronometerFirst [minutes]="30" [seconds]="61"></app-chronometer>
+</app-card>
