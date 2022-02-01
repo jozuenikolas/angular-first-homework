@@ -5,11 +5,15 @@ import { SharedRoutingModule } from './shared-routing.module';
 import {ChronometerComponent} from "./components/chronometer/chronometer.component";
 import { CardComponent } from './components/card/card.component';
 import { ButtonLoadingDirective } from './directives/button-loading.directive';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 const exportComponents =[
   ChronometerComponent,
   CardComponent,
-  ButtonLoadingDirective
+  ButtonLoadingDirective,
+  NavbarComponent,
+  SidebarComponent
 ]
 
 

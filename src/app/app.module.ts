@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //import { ChronometerComponent } from './shared/componets/chronometer/chronometer.component';
 import { HomeModule } from './home/home.module';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeModule } from './home/home.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule
     //HomeModule,
   ],
   providers: [],

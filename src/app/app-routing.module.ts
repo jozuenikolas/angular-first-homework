@@ -8,14 +8,17 @@ const routes: Routes = [
   { path:'catalogo',
     loadChildren: () => import('./catalogo/catalogo.module').then(module => module.CatalogoModule)
   },
+  { path:'personas',
+    loadChildren: () => import('./personas/personas.module').then(module => module.PersonasModule)
+  },
   {
     path: '',
-    redirectTo: '/home/main-page',
+    redirectTo: '/home',
     pathMatch: 'full', // full => /abc - prefix => /abc/a/d/asdasd/dasd
   },
   {
     path: '**',
-    redirectTo: '/home/main-page',
+    redirectTo: '/home',
   }
 ];
 
