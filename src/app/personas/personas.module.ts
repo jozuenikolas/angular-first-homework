@@ -2,16 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PersonasRoutingModule } from './personas-routing.module';
-import { MainPersonasComponent } from './components/main-personas/main-personas.component';
+import { CuentasPersonasComponent } from './components/cuentas-personas/cuentas-personas.component';
+import { ContainerPersonasComponent } from './components/container-personas/container-personas.component';
+import { TarjetasPersonasComponent } from './components/tarjetas-personas/tarjetas-personas.component';
+import { CreditosPersonasComponent } from './components/creditos-personas/creditos-personas.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
   declarations: [
-    MainPersonasComponent
+    CuentasPersonasComponent,
+    ContainerPersonasComponent,
+    TarjetasPersonasComponent,
+    CreditosPersonasComponent
   ],
   imports: [
     CommonModule,
-    PersonasRoutingModule
+    PersonasRoutingModule,
+    SharedModule
   ]
 })
 export class PersonasModule { }
