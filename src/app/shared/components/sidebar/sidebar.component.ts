@@ -9,6 +9,7 @@ export class SidebarComponent implements OnInit {
 
   @Input() sidebarMainElements:any = []
 
+
   constructor() { }
 
   ngOnInit(): void {

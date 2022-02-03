@@ -8,11 +8,11 @@ import {Component, OnInit} from '@angular/core';
 export class ContainerPersonasComponent implements OnInit {
 
   sidebarMainElements = [
-    {name:"Cuentas", path: "/personas/cuentas"},
-    {name:"Tarjetas", path: "/personas/tarjetas"},
-    {name:"Creditos", path: "/personas/creditos"},
-    {name:"Inversiones", path: "/personas/inversiones"},
-    {name:"Servicios", path: "/personas/servicios"},
+    {name:"Cuentas", path: "/personas/cuentas", iconClass: "fas fa-laptop"},
+    {name:"Tarjetas", path: "/personas/tarjetas", iconClass: "fas fa-credit-card"},
+    {name:"Creditos", path: "/personas/creditos", iconClass: "fas fa-dollar-sign"},
+    {name:"Inversiones", path: "/personas/inversiones", iconClass: ""},
+    {name:"Servicios", path: "/personas/servicios", iconClass: ""},
   ]
 
   constructor() {

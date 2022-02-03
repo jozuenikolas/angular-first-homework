@@ -3,6 +3,7 @@
     <ul class="nav flex-column">
       <li class="nav-item" *ngFor="let element of sidebarMainElements">
         <a class="nav-link" routerLink="{{ element.path }}" routerLinkActive="active">
+          <i [ngClass]="element.iconClass"></i>
           {{ element.name }}
         </a>
       </li>

@@ -11,10 +11,23 @@ const routes: Routes = [
   { path:'personas',
     loadChildren: () => import('./personas/personas.module').then(module => module.PersonasModule)
   },
+  { path:'empresas',
+    loadChildren: () => import('./empresas/empresas.module').then(module => module.EmpresasModule)
+  },
   {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full', // full => /abc - prefix => /abc/a/d/asdasd/dasd
+  },
+  {
+    path: 'personas',
+    redirectTo: '/personas/cuentas',
+    pathMatch: 'prefix',
+  },
+  {
+    path: 'empresas',
+    redirectTo: '/empresas',
+    pathMatch: 'prefix',
   },
   {
     path: '**',

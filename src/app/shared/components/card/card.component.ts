@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   @Input() subtitle = ""
   @Input() content = ""
   @Input() cardClass =""
+  @Input() srcImage= ""
+  @Input() btnValue=""
 
   constructor() { }
 
