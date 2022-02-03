@@ -1,1 +1,51 @@
-<p>main-empresas works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 mt-5">
+
+      <div class="card">
+
+        <div class="card-body">
+
+
+          <ul class="nav nav-tabs">
+
+            <li class="nav-item" *ngFor="let element of tabElements">
+              <a class="nav-link tab-link"
+                 [class.active]="element.isActive"
+                 (click)="onClickElementTab(element.id)">
+                {{element.name}}
+              </a>
+            </li>
+
+          </ul>
+
+
+          <div class="mt-4" [ngSwitch]="currentTabId">
+
+            <div *ngSwitchCase="'CUE'">
+              <app-cuentas-empresas></app-cuentas-empresas>
+            </div>
+
+            <div *ngSwitchCase="'CRE'">
+              <app-creditos-empresas></app-creditos-empresas>
+            </div>
+
+            <div *ngSwitchCase="'INV'">
+              <app-inversiones-empresas></app-inversiones-empresas>
+            </div>
+
+            <div *ngSwitchCase="'SER'">
+              <app-servicios-empresas></app-servicios-empresas>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
