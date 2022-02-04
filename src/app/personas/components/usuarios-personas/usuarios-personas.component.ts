@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Usuario } from './usuario'
+
 @Component({
   selector: 'app-usuarios-personas',
   templateUrl: './usuarios-personas.component.html',
@@ -9,86 +11,86 @@ export class UsuariosPersonasComponent implements OnInit {
 
   search:string = ""
 
-  usuarios:any = [
+  users:Usuario[] = [
     {
       id: 1,
-      nombre: "nicolas",
-      apellido: "arias",
-      salario: 100,
-      correo: "nicolas.arias@test.com",
-      porcentaje: 0.5
+      firstName: "nicolas",
+      lastName: "arias",
+      salary: 100,
+      email: "nicolas.arias@test.com",
+      percentage: 0.5
     },
     {
       id: 2,
-      nombre: "Milena",
-      apellido: "Ortiz",
-      salario: 200,
-      correo: "milena.ortiz@test.com",
-      porcentaje: 0.5
+      firstName: "Milena",
+      lastName: "Ortiz",
+      salary: 200,
+      email: "milena.ortiz@test.com",
+      percentage: 0.5
     },
     {
       id: 3,
-      nombre: "Emmily",
-      apellido: "Traslaviña",
-      salario: 300,
-      correo: "emmily.traslavina@test.com",
-      porcentaje: 0.5
+      firstName: "Emmily",
+      lastName: "Traslaviña",
+      salary: 300,
+      email: "emmily.traslavina@test.com",
+      percentage: 0.5
     },
     {
       id: 4,
-      nombre: "Kevin",
-      apellido: "Kaarl",
-      salario: 400,
-      correo: "kevin.kaarl@test.com",
-      porcentaje: 0.5
+      firstName: "Kevin",
+      lastName: "Kaarl",
+      salary: 400,
+      email: "kevin.kaarl@test.com",
+      percentage: 0.5
     },
     {
       id: 5,
-      nombre: "Ed",
-      apellido: "Maverick",
-      salario: 500,
-      correo: "ed.maverick@test.com",
-      porcentaje: 0.5
+      firstName: "Ed",
+      lastName: "Maverick",
+      salary: 500,
+      email: "ed.maverick@test.com",
+      percentage: 0.5
     },
     {
       id: 6,
-      nombre: "Sofía",
-      apellido: "Gonzalez",
-      salario: 600,
-      correo: "sofia.gonzalez@test.com",
-      porcentaje: 0.5
+      firstName: "Sofía",
+      lastName: "Gonzalez",
+      salary: 600,
+      email: "sofia.gonzalez@test.com",
+      percentage: 0.5
     },
     {
       id: 7,
-      nombre: "Valeria",
-      apellido: "Morales",
-      salario: 700,
-      correo: "valeria.morales@test.com",
-      porcentaje: 0.5
+      firstName: "Valeria",
+      lastName: "Morales",
+      salary: 700,
+      email: "valeria.morales@test.com",
+      percentage: 0.5
     },
     {
       id: 8,
-      nombre: "David",
-      apellido: "Molina",
-      salario: 800,
-      correo: "david.molina@test.com",
-      porcentaje: 0.5
+      firstName: "David",
+      lastName: "Molina",
+      salary: 800,
+      email: "david.molina@test.com",
+      percentage: 0.5
     },
     {
       id: 9,
-      nombre: "Josue",
-      apellido: "Arias",
-      salario: 900,
-      correo: "josue.arias@test.com",
-      porcentaje: 0.5
+      firstName: "Josue",
+      lastName: "Arias",
+      salary: 900,
+      email: "josue.arias@test.com",
+      percentage: 0.5
     },
     {
       id: 10,
-      nombre: "Esperanza",
-      apellido: "Gomez",
-      salario: 1000,
-      correo: "esperanza.gomez@test.com",
-      porcentaje: 0.5
+      firstName: "Esperanza",
+      lastName: "Gomez",
+      salary: 1000,
+      email: "esperanza.gomez@test.com",
+      percentage: 0.5
     }
   ]
 

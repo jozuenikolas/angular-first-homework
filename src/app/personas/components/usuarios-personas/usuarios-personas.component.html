@@ -30,13 +30,13 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let usuario of usuarios | arrayFilter: search">
-            <td>{{ usuario.id | number }}</td>
-            <td>{{ usuario.nombre | titlecase }}</td>
-            <td>{{ usuario.apellido | titlecase }}</td>
-            <td>{{ usuario.salario | currency : "EUR"}}</td>
-            <td>{{ usuario.correo }}</td>
-            <td>{{ usuario.porcentaje | percent}}</td>
+          <tr *ngFor="let user of users | arrayFilter: search">
+            <td>{{ user.id | number }}</td>
+            <td>{{ user.firstName | titlecase }}</td>
+            <td>{{ user.lastName | titlecase }}</td>
+            <td>{{ user.salary | currency : "EUR"}}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.percentage | percent}}</td>
           </tr>
           </tbody>
         </table>

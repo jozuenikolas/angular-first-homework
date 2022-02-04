@@ -1,13 +1,16 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
   name: 'arrayFilter'
 })
 export class ArrayFilterPipe implements PipeTransform {
 
-  transform(array: any[], filter?:any): any {
+  transform(array: any[], filter?: any): any {
 
-    return array.filter(({nombre}) => nombre.toUpperCase().includes(filter.toUpperCase()));
+    return array.filter(({
+                           firstName,
+                           lastName
+                         }) => firstName.toUpperCase().includes(filter.toUpperCase()) || lastName.toUpperCase().includes(filter.toUpperCase()));
 
   }
 
