@@ -11,43 +11,16 @@
       </div>
     </div>
 
-
     <div class="row">
-      <div class="col-md-4 mt-4">
-        <app-card title="Ahorros"
-                  srcImage="https://inicio.pichincha.com/portal/Portals/0/adam/Submenu/7WAvgisllUCIBv4F6fduZg/Icon/PERSONAS-CUENTAS-CORRIENTE-2.jpg?w=300&h=200&mode=crop"
-                  content="Abre una cuenta en 10 minutos y empieza a manejar tu dinero donde sea que estés."
-                  btnValue="Conoce mas">
+
+      <div class="col-md-4 mt-4" *ngFor="let cuenta of cuentasPersonasDetails">
+        <app-card title="{{ cuenta.title }}"
+                  srcImage="{{ cuenta.srcImage }}"
+                  content="{{ cuenta.content }}"
+                  btnValue="{{ cuenta.btnValue }}">
         </app-card>
       </div>
-      <div class="col-md-4 mt-4">
-        <app-card title="Ahorro Programado"
-                  srcImage="https://inicio.pichincha.com/portal/Portals/0/adam/Submenu/EfyqZV-vxEGAFGMFzSSChA/Icon/PERSONAS-CUENTAS-AHORRO-PROGRAMADO.jpg?w=300&h=200&mode=crop"
-                  content="Cumple tus planes a futuro, con una cuota de ahorro mensual desde 10 dólares."
-                  btnValue="Conoce más">
-        </app-card>
-      </div>
-      <div class="col-md-4 mt-4">
-        <app-card title="Jóvenes"
-                  srcImage="https://inicio.pichincha.com/portal/Portals/0/adam/Submenu/BCr9OQZmnUyzc_8VFv6E4w/Icon/Jovenes.jpg?w=300&h=200&mode=crop"
-                  content="Descubre todas nuestras opciones para empezar a construir tu futuro."
-                  btnValue="Conoce más">
-        </app-card>
-      </div>
-      <div class="col-md-4 mt-4 mb-4">
-        <app-card title="Cuenta Básica"
-                  srcImage="https://inicio.pichincha.com/portal/Portals/0/adam/Submenu/iRnsHbN1I0yqz0hhnN3M-Q/Icon/PERSONAS-CUENTAS-CUENTA-BASICA.jpg?w=300&h=200&mode=crop"
-                  content="Abre tu cuenta y maneja tu dinero desde cualquier corresponsal de la red Mi Vecino."
-                  btnValue="Conoce más">
-        </app-card>
-      </div>
-      <div class="col-md-4 mt-4 mb-4">
-        <app-card title="Corriente"
-                  srcImage="https://inicio.pichincha.com/portal/Portals/0/adam/Submenu/7WAvgisllUCIBv4F6fduZg/Icon/PERSONAS-CUENTAS-CORRIENTE-2.jpg?w=300&h=200&mode=crop"
-                  content="Administra y controla tu dinero a través de cheques personales."
-                  btnValue="Conoce mas">
-        </app-card>
-      </div>
+
     </div>
 
   </div>
