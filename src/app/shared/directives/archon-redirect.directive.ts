@@ -26,6 +26,7 @@ export class ArchonRedirectDirective implements OnInit{
       `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Redireccionando...`
     )
 
+    //Simulacion de una llamada asíncrona
     setTimeout(()=>{
       this.rendered.setProperty(
         this.elementRef.nativeElement,
