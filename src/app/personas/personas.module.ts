@@ -7,6 +7,7 @@ import { CuentasPersonasComponent } from './components/cuentas-personas/cuentas-
 import { TarjetasPersonasComponent } from './components/tarjetas-personas/tarjetas-personas.component';
 import { CreditosPersonasComponent } from './components/creditos-personas/creditos-personas.component';
 import {SharedModule} from "../shared/shared.module";
+import { UsuariosPersonasComponent } from './components/usuarios-personas/usuarios-personas.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {SharedModule} from "../shared/shared.module";
     ContainerPersonasComponent,
     CuentasPersonasComponent,
     TarjetasPersonasComponent,
-    CreditosPersonasComponent
+    CreditosPersonasComponent,
+    UsuariosPersonasComponent
   ],
   imports: [
     CommonModule,

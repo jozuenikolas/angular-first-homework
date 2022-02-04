@@ -13,6 +13,7 @@ export class ContainerPersonasComponent implements OnInit {
     {name:"Creditos", path: "/personas/creditos", iconClass: "fas fa-dollar-sign"},
     {name:"Inversiones", path: "/personas/inversiones", iconClass: ""},
     {name:"Servicios", path: "/personas/servicios", iconClass: ""},
+    {name:"Usuarios", path: "/personas/usuarios", iconClass: "fas fa-users"}
   ]
 
   constructor() {
