@@ -25,7 +25,6 @@ export class ButtonLoadingDirective implements OnInit{
 
   @HostListener('click')
   onClick(){
-    console.log('Click Directive')
     if(!this.loading){
       this.rendered.setProperty(
         this.elementRef.nativeElement,

@@ -1,4 +1,4 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, OnInit, SimpleChanges} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -6,7 +6,7 @@ import {Router} from "@angular/router";
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit, OnChanges {
+export class NavbarComponent implements OnInit {
   route: Router
   activeClasses: Record<string, boolean> = {};
 
@@ -18,10 +18,6 @@ export class NavbarComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.route = this.router
-  }
-
-  ngOnChanges(changes: SimpleChanges): void{
-    console.log("changes", changes)
   }
 
 }
