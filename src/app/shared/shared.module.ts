@@ -14,14 +14,14 @@ const exportComponents =[
   CardComponent,
   ButtonLoadingDirective,
   NavbarComponent,
-  SidebarComponent
+  SidebarComponent,
+  ArchonRedirectDirective,
 ]
 
 
 @NgModule({
   declarations: [
     ... exportComponents,
-    ArchonRedirectDirective,
     //ButtonComponent
   ],
   imports: [
