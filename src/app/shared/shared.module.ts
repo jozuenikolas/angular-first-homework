@@ -7,6 +7,7 @@ import { CardComponent } from './components/card/card.component';
 import { ButtonLoadingDirective } from './directives/button-loading.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ArchonRedirectDirective } from './directives/archon-redirect.directive';
 
 const exportComponents =[
   ChronometerComponent,
@@ -20,6 +21,7 @@ const exportComponents =[
 @NgModule({
   declarations: [
     ... exportComponents,
+    ArchonRedirectDirective,
     //ButtonComponent
   ],
   imports: [

@@ -24,13 +24,13 @@
   <img class=" mx-auto mt-4"
        src="{{ srcImage }}"
        alt="Card image cap"
-       style="width: 80%;">
+       style="width: 90%;">
   <div class="card-body">
-    <h5 class="card-title">{{ title }}</h5>
+    <h5 class="card-title">{{ title | titlecase }}</h5>
     <p class="card-text">
       {{ content }}
     </p>
-    <a href="#" class="btn btn-primary">{{ btnValue }}</a>
+    <a class="btn btn-primary">{{ btnValue }}</a>
   </div>
 
 </div>
