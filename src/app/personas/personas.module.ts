@@ -8,6 +8,7 @@ import { TarjetasPersonasComponent } from './components/tarjetas-personas/tarjet
 import { CreditosPersonasComponent } from './components/creditos-personas/creditos-personas.component';
 import {SharedModule} from "../shared/shared.module";
 import { UsuariosPersonasComponent } from './components/usuarios-personas/usuarios-personas.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { UsuariosPersonasComponent } from './components/usuarios-personas/usuari
   imports: [
     CommonModule,
     PersonasRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class PersonasModule { }

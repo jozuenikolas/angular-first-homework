@@ -8,6 +8,7 @@ import { ButtonLoadingDirective } from './directives/button-loading.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ArchonRedirectDirective } from './directives/archon-redirect.directive';
+import { ArrayFilterPipe } from './pipes/array-filter/array-filter.pipe';
 
 const exportComponents =[
   ChronometerComponent,
@@ -16,6 +17,7 @@ const exportComponents =[
   NavbarComponent,
   SidebarComponent,
   ArchonRedirectDirective,
+  ArrayFilterPipe,
 ]
 
 
